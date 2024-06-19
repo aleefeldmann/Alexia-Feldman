@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    background-color: #F2EAE4;
+    font-family: "Inter"
+    }
+
+    #animacion {
+        width: 234px;
+        height: 310px;
+        background-image: url(../css/fotos/estrellas2.png);
+        position: absolute;
+        transform: scaleX(-1);
+        animation: estrellas 2s infinite steps(3);   
+    }
+
+    #animacion2 {
+        width: 234px;
+        height: 310px;
+        background-image: url(../css/fotos/estrellas2.png);
+        position: absolute;
+        right: 0;
+        transform: scaleY(-1) scaleX(-1);
+        animation: estrellas 2s infinite steps(3);   
+    }
+
+
+@keyframes estrellas {
+from {background-position: 0px 0px;}
+to {background-position: 0px 300px;}
+
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 190px, auto;
+    position: relative;
+  
+}
+ 
+h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    color: #E65E2F;
+    font-size: 65px;
+    margin: auto;
+    text-decoration: dashed;
+}
+
+p {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    color: #1A1917;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+header a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: #1A1917;
+    background-color: #F2EAE4;
+    border: 1.5px dashed #1A1917;
+    width: 90px;
+    height: 10px;
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    line-height: 10px;
+    transition: all 5ms;
+}
+
+header a:hover{
+    background-color: #E65E2F;
+    color: #F2EAE4;
+    border: 1.5px dashed #F2EAE4;
+}
+
+
+main{
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    padding: 30px;
+    border: dashed 1.5px #E65E2F;
+}
+
+div {
+    width: 30%;
+    margin-bottom: 30px;
+   
+}
+
+
+img, video {
+    width: 100%;
+}
+
+#video {
+    width: 100%; 
+    margin: auto; 
+    display: flex; 
+    flex-wrap:wrap;
+    
+}
+
